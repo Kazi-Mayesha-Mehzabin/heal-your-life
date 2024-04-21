@@ -131,9 +131,12 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
-                    <h1 class="mb-4">Why You Should Trust Us? Get Know About Us!</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                    <h1 class="mb-4">Why You Should Trust Us?</h1>
+                    <p>Heal Your Life caters to individuals grappling with depression who may struggle to articulate their challenges openly. 
+                    We recognize the difficulty in seeking counseling and aim to offer a trusted companion in your journey towards healing. Rest assured, confidentiality is paramount with us. Our platform facilitates access to experienced professionals, fostering a supportive environment for counseling sessions to pave the way for a brighter future.</p>
+                    <p class="mb-4">We offer prompt medical assistance, with the flexibility for appointments either online or in-person with our counselors or doctors.
+                     Our services are designed to ensure that seeking counseling is a proactive step towards self-care, free from any stigma or judgment.</p>
+                      <h1 class="mb-4">Join Us Today. Help us create a better world.</h1>
                     <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
                     <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
                     <p><i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals</p>
