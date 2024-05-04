@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/home', [HomepageController:: class, 'goToHomePage']);
 Route::get('/index', [HomepageController:: class, 'goToIndexPage']);
 Route::get('/aboutUs', [HomepageController:: class, 'goToAboutUsPage'])->name("aboutUs");
+Route::get('/register', [HomepageController:: class, 'goToRegisterPage'])->name("register");

@@ -17,6 +17,10 @@ class HomepageController extends Controller {
     public function goToAboutUsPage(){
         return view('aboutUs');
     }
+    public function goToRegisterPage(){
+        return view('register');
+    }
+   
     
 
 

@@ -90,14 +90,14 @@
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
                         <a href="feature.html" class="dropdown-item">Feature</a>
                         <a href="team.html" class="dropdown-item">Our Doctor</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                        <a href="{{route ('register')  }}" class="dropdown-item">Appointment</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="{{route ('register')  }}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Register Now</a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -107,7 +107,7 @@
     <div class="container-fluid header bg-primary p-0 mb-5">
         <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
-                <h1 class="display-4 text-white mb-5">Good Health Is The Root Of All Heppiness</h1>
+                <h1 class="display-4 text-white mb-5">Good Health Is The Root Of All Happiness</h1>
                 <div class="row g-4">
                     <div class="col-sm-4">
                         <div class="border-start border-light ps-4">
@@ -134,7 +134,7 @@
                     <div class="owl-carousel-item position-relative">
                         <img class="img-fluid" src="res/img/carousel-1.jpg" alt="">
                         <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0">Cardiology</h1>
+                            <h1 class="display-1 text-white mb-0">Mind-Body Wellness</h1>
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
