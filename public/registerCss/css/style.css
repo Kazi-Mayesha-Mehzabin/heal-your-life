@@ -1,0 +1,205 @@
+.registerForm{
+    height:50px !important;
+    width:100%;
+}
+
+.image-container {
+    position: relative; /* Ensure proper positioning for animation */
+    overflow: hidden; /* Prevent overflow if necessary */
+}
+
+.animated-image {
+    width: 450px;
+    height: 450px;
+    transform: translateY(100%); /* Start below the container */
+    opacity: 0; /* Initially invisible */
+    animation: slideInFromBelow 2s ease-in-out forwards; /* Trigger animation */
+}
+
+/* Keyframes for the sliding effect */
+@keyframes slideInFromBelow {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Initial state: positioned off-screen to the left */
+.slide-in {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-in-out forwards; /* Trigger animation */
+}
+
+/* Keyframes for the sliding effect */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-selected {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #37b8bd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #37b8bd;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    margin-top: 5px;
+}
+
+.dropdown-options li {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown-options li:hover {
+    background-color: #f0f0f0;
+}
+.radio-group {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    align-items: center;
+    font-size: 18px;
+    color: #37b8bd;
+    font-weight: 600;
+}
+input::placeholder {
+    color: #818181 !important;/* Lightened white placeholder */
+}
+.alreadyAccount{
+    text-align: center;
+    color:#181818;
+    margin-top:3px;
+}
+.radio-group label {
+    cursor: pointer;
+}
+.textHeal{
+    color:white !important;
+    text-align: center;
+
+}
+
+#forSeeker {
+    transform: translateX(-100%); /* Initially off-screen to the left */
+    transition: transform 1s ease-in-out; /* Smooth sliding animation */
+}
+
+#forSeeker.show {
+    transform: translateX(0); /* Bring the element to its normal position */
+}
+
+
+/* Form styles */
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex; /* Flexbox centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow-y: auto; /* Prevent content overflow */
+}
+/* Modal content */
+.modal-content {
+    width: 500px;
+    height: 620px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close {
+    color: #332f2f;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(63, 117, 179);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 2px;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #37b8bd;
+    border-radius: 5px;;
+    resize: none;
+    font: 12px;;
+}
+
+button {
+    background-color: #37b8bd;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;;
+}
+
+button:hover {
+    background-color: #2c9a99;
+}
+.btn-primaryy{
+    background-color:rgb(255, 255, 255) !important;
+    border:none;
+    margin-bottom:20px !important;
+    padding:45px !important;
+    color:navy !important;
+   height:50px !important;
+    
+}
+.background-nav{
+    background-color:rgb(1, 72, 109) !important;
+
+}
+.text-primary{
+    color:white !important;
+}

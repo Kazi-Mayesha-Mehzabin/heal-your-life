@@ -30,6 +30,19 @@
 
     <!-- Template Stylesheet -->
     <link href="res/css/style.css" rel="stylesheet">
+
+    <style>
+          .btn-primary{
+            background-color:rgb(1, 72, 109) !important;
+            border: navy;
+            margin-bottom:3px;           
+        }
+        .btnLogin{
+            margin-right:10px !important;
+        }
+       
+       
+    </style>
 </head>
 
 <body>
@@ -73,7 +86,7 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+    <nav   style="height:70px;" class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h1 class="m-0 text-primary"><i class="far fa-hospital me-3"></i>Heal Your Life</h1>
         </a>
@@ -91,13 +104,14 @@
                         <a href="feature.html" class="dropdown-item">Feature</a>
                         <a href="team.html" class="dropdown-item">Our Doctor</a>
                         <a href="{{route ('register')  }}" class="dropdown-item">Appointment</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <a href="testimonial.html" class="dropdown-item">Myths and Facts</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="{{route ('register')  }}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Register Now</a>
+            <a href="{{route ('register')  }}" style="margin-right:5px;" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Register Now</a>
+            <a href="{{route ('loginUser')  }}" class=" btnLogin btn btn-primary rounded-0 py-4 px-lg-3 d-none d-md-block">Login</a>
+            
         </div>
     </nav>
     <!-- Navbar End -->
@@ -105,7 +119,7 @@
 
     <!-- Header Start -->
     <div class="container-fluid header bg-primary p-0 mb-5">
-        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
+        <div style="background-color:#37b8bd;" class="row g-0 align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
                 <h1 class="display-4 text-white mb-5">Good Health Is The Root Of All Happiness</h1>
                 <div class="row g-4">
@@ -132,21 +146,33 @@
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <div class="owl-carousel header-carousel">
                     <div class="owl-carousel-item position-relative">
-                        <img class="img-fluid" src="res/img/carousel-1.jpg" alt="">
+                        <img class="img-fluid" src="res/img/carousel1.jpg" alt="">
                         <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0">Mind-Body Wellness</h1>
+                            <h1 class="display-1 text-white mb-0">Anxiety</h1>
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img class="img-fluid" src="res/img/carousel-2.jpg" alt="">
+                        <img class="img-fluid" src="res/img/pic3.avif" alt="">
                         <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0">Neurology</h1>
+                            <h1 class="display-1 text-white mb-0">Trauma</h1>
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img class="img-fluid" src="res/img/carousel-3.jpg" alt="">
+                        <img class="img-fluid" src="res/img/selfDoubt.jpg" alt="">
                         <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0">Pulmonary</h1>
+                            <h1 style="color:#04676b;" class="display-1 mb-0">Self Doubt</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="res/img/depression.avif" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Depression</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="res/img/getBetter.jpg" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Get better with us!</h1>
                         </div>
                     </div>
                 </div>
@@ -162,8 +188,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="res/img/about-1.jpg" alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="res/img/about-2.jpg" alt="" style="margin-top: -25%;">
+                        <img class="img-fluid rounded w-75 align-self-end" src="res/img/normalUser.png" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="res/img/pic3.avif" alt="" style="margin-top: -25%;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -187,41 +213,41 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
-                <h1>Health Care Solutions</h1>
+                <h1>What do we deal with?</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light rounded h-100 p-5">
+                    <div class="service-item bg-light rounded h-100 p-5" style="background-color:rgb(117, 223, 219) !important;">
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-heartbeat text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Cardiology</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <h4 class="mb-3">Anxiety</h4>
+                        <p style="color:white;" class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded h-100 p-5">
+                    <div class="service-item bg-light rounded h-100 p-5" style="background-color:rgb(117, 152, 223) !important;">
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-x-ray text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Pulmonary</h4>
+                        <h4 class="mb-3">Depression</h4>
                         <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-light rounded h-100 p-5">
+                    <div class="service-item bg-light rounded h-100 p-5" style="background-color:rgb(117, 223, 219) !important;">
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-brain text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Neurology</h4>
+                        <h4 class="mb-3">Anxiety</h4>
                         <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light rounded h-100 p-5">
+                    <div class="service-item bg-light rounded h-100 p-5" style="background-color:rgb(254, 202, 243) !important;">
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-wheelchair text-primary fs-4"></i>
                         </div>
@@ -231,7 +257,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded h-100 p-5">
+                    <div class="service-item bg-light rounded h-100 p-5" style="background-color:rgb(245, 154, 192) !important;">
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-tooth text-primary fs-4"></i>
                         </div>
@@ -241,7 +267,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-light rounded h-100 p-5">
+                    <div class="service-item bg-light rounded h-100 p-5" style="background-color:rgb(254, 202, 243) !important;">
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-vials text-primary fs-4"></i>
                         </div>
@@ -260,7 +286,7 @@
     <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s" style="background-color:#04676b !important;">
                     <div class="p-lg-5 ps-lg-0">
                         <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
                         <h1 class="text-white mb-4">Why Choose Us</h1>
@@ -315,7 +341,7 @@
                 </div>
                 <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="res/img/feature.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="res/img/getBetter.jpg" style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>

@@ -15,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-})->name("welcome");
+    return view('index'); // Replace 'index' with your landing page view file name
+})->name('index');
 Route::get('/home', [HomepageController:: class, 'goToHomePage']);
+Route::get('/loginUser', [HomepageController:: class, 'goToLoginPage'])->name("loginUser");
+Route::get('/contactUs', [HomepageController:: class, 'goToContactPage'])->name("contactUs");
 Route::get('/index', [HomepageController:: class, 'goToIndexPage']);
 Route::get('/aboutUs', [HomepageController:: class, 'goToAboutUsPage'])->name("aboutUs");
 Route::get('/register', [HomepageController:: class, 'goToRegisterPage'])->name("register");
+Route::get('/login', [HomepageController:: class, 'goToLoginPage'])->name("login");
+Route::get('/upload', [HomepageController:: class, 'goToUploadPage'])->name("upload");

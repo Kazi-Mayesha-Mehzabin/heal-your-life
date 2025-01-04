@@ -20,6 +20,18 @@ class HomepageController extends Controller {
     public function goToRegisterPage(){
         return view('register');
     }
+
+    public function goToLoginPage(){
+        return view('loginUser');
+    }
+    public function goToUploadPage(){
+        return view('upload');
+    }
+
+    public function goToContactPage(){
+        return view('contactUs');
+    }
+   
    
     
 
