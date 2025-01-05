@@ -118,10 +118,20 @@
             /* Ensure it's visible after animation */
         }
         .btn-primary{
-            background-color:rgb(1, 72, 109) !important;
-            border: navy;
+            background-color:transparent !important;
+          border: none !important;
             margin-bottom:20px !important;
+            color: rgb(1, 72, 109) !important;
             padding:45px !important;
+            font-weight: bold;
+            font-size: 16px !important;
+            padding-left: 10px !important;
+            padding-right: 15px !important;
+            margin-top:-5px !important;
+            margin-left:-4px !important;
+           
+           
+           
             
         }
         
@@ -131,14 +141,14 @@
 <body>
     <nav style="height:70px;"class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 style="color:rgb(1, 72, 109) !important;" class="m-0 text-primary"><i class="far fa-hospital me-3"></i>HealYourLife</h2>
+            <h2 style="color:rgb(1, 72, 109) !important;" class="m-0 text-primary"></i>HealYourMind</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="{{ route('index') }}" class="nav-item nav-link active">Home</a>
                 <a href="{{route ('aboutUs')  }}" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Service</a>
                 <div class="nav-item dropdown">
@@ -152,8 +162,8 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="{{route ('register')  }}" style="margin-right:5px; " class="btn btn-primary rounded-0 py-4 px-lg-3 d-none d-md-block">Register Now</a>
-            <a href="{{route ('loginUser')  }}" class="btn btn-primary rounded-0 py-4 px-lg-3 d-none d-md-block">Login</a>
+            <a href="{{route ('register')  }}" style="margin-right:5px; " class=" btn btn-primary rounded-0 py-2 px-md-3 d-none d-md-block">REGISTER</a>
+            <a href="{{route ('loginUser')  }}" class="btn btn-primary rounded-0 py-2 px-md-3 d-none d-md-block">LOGIN</a>
         </div>
     </nav>
 

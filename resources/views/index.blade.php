@@ -33,9 +33,17 @@
 
     <style>
           .btn-primary{
-            background-color:rgb(1, 72, 109) !important;
-            border: navy;
-            margin-bottom:3px;           
+            background-color:transparent!important;
+            margin-bottom:1px;  
+             
+            
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            
+            font-size: 18px !important;
+            color:rgb(1, 72, 109) !important;
+            font-weight: bold;
+               
         }
         .btnLogin{
             margin-right:10px !important;
@@ -86,9 +94,9 @@
 
 
     <!-- Navbar Start -->
-    <nav   style="height:70px;" class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+    <nav   style="height:65px;" class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0 text-primary"><i class="far fa-hospital me-3"></i>Heal Your Life</h1>
+            <h2 style="color: rgb(1, 72, 109) !important;"  class="m-0 text-primary">HealYourMind</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -109,8 +117,8 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="{{route ('register')  }}" style="margin-right:5px;" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Register Now</a>
-            <a href="{{route ('loginUser')  }}" class=" btnLogin btn btn-primary rounded-0 py-4 px-lg-3 d-none d-md-block">Login</a>
+            <a href="{{route ('register')  }}" style="margin-right:5px; " class=" btn-primary py-2 px-md-5 d-none d-lg-block">REGISTER</a>
+            <a href="{{route ('loginUser')  }}" class=" btnLogin  btn-primary  py-2 px-md-3 d-none d-md-block">LOGIN</a>
             
         </div>
     </nav>

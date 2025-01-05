@@ -31,6 +31,9 @@ class HomepageController extends Controller {
     public function goToContactPage(){
         return view('contactUs');
     }
+    public function goToDashboardPage(){
+        return view('myDashboard');
+    }
    
    
     

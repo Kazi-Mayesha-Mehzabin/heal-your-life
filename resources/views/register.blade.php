@@ -30,42 +30,52 @@
     <link href="res/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="res/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="res/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="res/css/style.css" rel="stylesheet">
+
+
     <title>Register</title>
 </head>
 
 <body>
-    <nav style="height:65px;  !important;"class="navbar background-nav navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i style="color:white;" class="far fa-hospital me-3"></i>HealYourLife</h2>
+    <nav style="height:65px;   ;" class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        
+         <a href="{{ route('index') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 style="color:rgb(1, 72, 109) !important; margin-left:-12px !important;" class="m-0 text-primary">HealYourMind</h2>
         </a>
+         
+        
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a  style="color:white;" href="index.html" class="nav-item nav-link active">Home</a>
-                <a style="color:white;" href="{{route ('aboutUs')  }}" class="nav-item nav-link">About</a>
-                <a style="color:white;" href="service.html" class="nav-item nav-link">Service</a>
+                <a href="{{ route('index') }}" class="nav-item nav-link active">Home</a>
+                <a href="{{route ('aboutUs')  }}" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
                 <div class="nav-item dropdown">
-                    <a style="color:white;" href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
                         <a href="{{route ('register')  }}" class="dropdown-item">Appointment</a>
                         <a href="testimonial.html" class="dropdown-item">Myths and Facts</a>
                     </div>
                 </div>
-                <a style="color:white;" href="{{ route('contactUs') }}" class="nav-item nav-link">Contact</a>
+                <a href="{{ route('contactUs') }}" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="{{route ('register')  }}" style="margin-right:5px; " class="btn btn-primary btn-primaryy rounded-0 py-4 px-lg-3 d-none d-md-block">Register Now</a>
-            <a href="{{route ('loginUser')  }}" class="btn btn-primary btn-primaryy rounded-0 py-4 px-lg-3 d-none d-md-block">Login</a>
+            <a href="{{route ('register')  }}" style="margin-right:5px; " class=" btn-primary btn-primaryy  py-2 px-md-3 d-none d-md-block">REGISTER</a>
+            <a href="{{route ('loginUser')  }}" class=" btn-primary py-2 btn-primaryy px-md-3 d-none d-md-block">LOGIN</a>
         </div>
     </nav>
 
-    <div class="d-lg-flex half" style="margin-top:-20px;">
+    <div class="d-lg-flex half" style="margin-top:-22px; background-color:#e0f5ff !important " >
         <div class="contents order-2 order-md-1">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-7 slide-in">
-                        <h3 style="margin-top:35px; font-size:30px; margin-left:20px; color:#11a5ab;">Enlist as a
+                        <h3 style="margin-top:35px; font-size:32px; margin-left:20px; color:#037e82;">Enlist as a
                             Healer/Seeker
                             today!</h3>
 
@@ -236,8 +246,8 @@
 
 
                             <div style="text-align: center; margin-top: 12px !important;">
-                                <input type="submit" value="Register" class="btn btn-block btn-primary"
-                                    style="border: 2px ; font-weight: bold; padding:12px; width: 100%; background-color:#37b8bd;">
+                                <input type="submit" value="Register" class="btn btn-block btn-primary btn-prime"
+                                    style="border: 2px ; font-weight: bold; padding:12px; width: 100%; background-color:#029ca1;">
                             </div>
                             <div class="alreadyAccount">
                                 <p >Already have an account?

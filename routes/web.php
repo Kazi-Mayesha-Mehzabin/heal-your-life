@@ -19,6 +19,7 @@ Route::get('/', function () {
 })->name('index');
 Route::get('/home', [HomepageController:: class, 'goToHomePage']);
 Route::get('/loginUser', [HomepageController:: class, 'goToLoginPage'])->name("loginUser");
+Route::get('/myDashboard', [HomepageController:: class, 'goToDashboardPage'])->name("myDashboard");
 Route::get('/contactUs', [HomepageController:: class, 'goToContactPage'])->name("contactUs");
 Route::get('/index', [HomepageController:: class, 'goToIndexPage']);
 Route::get('/aboutUs', [HomepageController:: class, 'goToAboutUsPage'])->name("aboutUs");

@@ -1,3 +1,14 @@
 .background-color{
     background-color: rgb(11, 57, 100) !important;
 }
+.btn-primaryy{
+    
+    background-color:transparent !important;
+          border: none !important;
+            margin-bottom:20px !important;
+            color: rgb(1, 72, 109) !important;
+            font-weight: bold;
+            font-size: 16px !important;
+            margin-top:16px !important;
+            margin-left:-5px !important;   
+}
